@@ -1,0 +1,106 @@
+|--- numPlatCars <= 8.50
+|   |--- numHumanCars <= 200.00
+|   |   |--- numHumanCars <= 55.00
+|   |   |   |--- class: False
+|   |   |--- numHumanCars >  55.00
+|   |   |   |--- waitTime <= 0.06
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 6.50
+|   |   |   |   |   |--- DENMInterval <= 0.08
+|   |   |   |   |   |   |--- PacketSize <= 300.00
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 3.50
+|   |   |   |   |   |   |   |   |--- waitTime <= 0.04
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |--- waitTime >  0.04
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  3.50
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- PacketSize >  300.00
+|   |   |   |   |   |   |   |--- waitTime <= 0.04
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- waitTime >  0.04
+|   |   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 4.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  4.50
+|   |   |   |   |   |   |   |   |   |--- DecelerationRate <= 7.00
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |   |   |--- DecelerationRate >  7.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- DENMInterval >  0.08
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  6.50
+|   |   |   |   |   |--- class: False
+|   |   |   |--- waitTime >  0.06
+|   |   |   |   |--- class: False
+|   |--- numHumanCars >  200.00
+|   |   |--- DENMInterval <= 0.08
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 3.50
+|   |   |   |   |--- waitTime <= 0.14
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- waitTime >  0.14
+|   |   |   |   |   |--- PacketSize <= 300.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- PacketSize >  300.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) >  3.50
+|   |   |   |   |--- class: False
+|   |   |--- DENMInterval >  0.08
+|   |   |   |--- waitTime <= 0.07
+|   |   |   |   |--- class: False
+|   |   |   |--- waitTime >  0.07
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 6.50
+|   |   |   |   |   |--- PacketSize <= 400.00
+|   |   |   |   |   |   |--- waitTime <= 0.08
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- waitTime >  0.08
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- PacketSize >  400.00
+|   |   |   |   |   |   |--- waitTime <= 0.08
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- waitTime >  0.08
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 4.50
+|   |   |   |   |   |   |   |   |--- waitTime <= 0.11
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- waitTime >  0.11
+|   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  4.50
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  6.50
+|   |   |   |   |   |--- class: False
+|--- numPlatCars >  8.50
+|   |--- BeaconIntervalHuman <= 0.02
+|   |   |--- waitTime <= 0.09
+|   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |--- numHumanCars <= 350.00
+|   |   |   |   |   |--- numPlatCars <= 11.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- numPlatCars >  11.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- numHumanCars >  350.00
+|   |   |   |   |   |--- class: False
+|   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 3.50
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  3.50
+|   |   |   |   |   |--- class: False
+|   |   |--- waitTime >  0.09
+|   |   |   |--- numPlatCars <= 11.00
+|   |   |   |   |--- BeaconIntervalHuman <= 0.01
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- BeaconIntervalHuman >  0.01
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 2.50
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  2.50
+|   |   |   |   |   |   |--- waitTime <= 0.10
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- waitTime >  0.10
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |--- numPlatCars >  11.00
+|   |   |   |   |--- class: True
+|   |--- BeaconIntervalHuman >  0.02
+|   |   |--- numHumanCars <= 350.00
+|   |   |   |--- waitTime <= 0.09
+|   |   |   |   |--- class: True
+|   |   |   |--- waitTime >  0.09
+|   |   |   |   |--- class: False
+|   |   |--- numHumanCars >  350.00
+|   |   |   |--- class: False

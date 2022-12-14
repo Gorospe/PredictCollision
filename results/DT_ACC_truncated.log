@@ -1,0 +1,106 @@
+|--- DecelerationRate <= 5.50
+|   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |--- DecelerationRate <= 4.50
+|   |   |   |--- numPlatCars <= 11.50
+|   |   |   |   |--- class: False
+|   |   |   |--- numPlatCars >  11.50
+|   |   |   |   |--- DecelerationRate <= 3.50
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- DecelerationRate >  3.50
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |--- class: False
+|   |   |--- DecelerationRate >  4.50
+|   |   |   |--- numPlatCars <= 7.50
+|   |   |   |   |--- class: False
+|   |   |   |--- numPlatCars >  7.50
+|   |   |   |   |--- spdLeader <= 55.00
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- spdLeader >  55.00
+|   |   |   |   |   |--- class: True
+|   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |--- numPlatCars <= 11.50
+|   |   |   |   |--- class: False
+|   |   |   |--- numPlatCars >  11.50
+|   |   |   |   |--- DecelerationRate <= 4.50
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- DecelerationRate >  4.50
+|   |   |   |   |   |--- class: True
+|   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |--- class: False
+|--- DecelerationRate >  5.50
+|   |--- Ctr_Param(Ploegh||Spacing) <= 0.65
+|   |   |--- spdLeader <= 55.00
+|   |   |   |--- DecelerationRate <= 7.50
+|   |   |   |   |--- class: False
+|   |   |   |--- DecelerationRate >  7.50
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |--- class: False
+|   |   |--- spdLeader >  55.00
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.55
+|   |   |   |   |--- numPlatCars <= 9.50
+|   |   |   |   |   |--- DecelerationRate <= 6.50
+|   |   |   |   |   |   |--- numPlatCars <= 5.50
+|   |   |   |   |   |   |   |--- spdLeader <= 75.00
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- spdLeader >  75.00
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- numPlatCars >  5.50
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |   |   |   |--- numPlatCars <= 7.50
+|   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |--- numPlatCars >  7.50
+|   |   |   |   |   |   |   |   |   |--- spdLeader <= 85.00
+|   |   |   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |   |   |--- spdLeader >  85.00
+|   |   |   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- DecelerationRate >  6.50
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- numPlatCars >  9.50
+|   |   |   |   |   |--- numPlatCars <= 11.50
+|   |   |   |   |   |   |--- numPlatCars <= 10.50
+|   |   |   |   |   |   |   |--- spdLeader <= 85.00
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- spdLeader >  85.00
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- numPlatCars >  10.50
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- numPlatCars >  11.50
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.55
+|   |   |   |   |--- DecelerationRate <= 6.50
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- DecelerationRate >  6.50
+|   |   |   |   |   |--- spdLeader <= 65.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- spdLeader >  65.00
+|   |   |   |   |   |   |--- DecelerationRate <= 7.50
+|   |   |   |   |   |   |   |--- spdLeader <= 105.00
+|   |   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |   |--- spdLeader >  105.00
+|   |   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- DecelerationRate >  7.50
+|   |   |   |   |   |   |   |--- class: True
+|   |--- Ctr_Param(Ploegh||Spacing) >  0.65
+|   |   |--- DecelerationRate <= 7.50
+|   |   |   |--- class: False
+|   |   |--- DecelerationRate >  7.50
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.85
+|   |   |   |   |--- spdLeader <= 75.00
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- spdLeader >  75.00
+|   |   |   |   |   |--- spdLeader <= 105.00
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.75
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.75
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- spdLeader >  105.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.85
+|   |   |   |   |--- class: False

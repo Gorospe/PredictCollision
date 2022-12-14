@@ -1,0 +1,4 @@
+|--- BeaconIntervalHuman <= 0.01
+|   |--- class: True
+|--- BeaconIntervalHuman >  0.01
+|   |--- class: False
