@@ -1,0 +1,19 @@
+|--- numPlatCars <= 8.50
+|   |--- numHumanCars <= 200.00
+|   |   |--- class: False
+|   |--- numHumanCars >  200.00
+|   |   |--- DENMInterval <= 0.08
+|   |   |   |--- class: False
+|   |   |--- DENMInterval >  0.08
+|   |   |   |--- waitTime <= 0.07
+|   |   |   |   |--- class: False
+|   |   |   |--- waitTime >  0.07
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 6.50
+|   |   |   |   |   |--- class: True
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  6.50
+|   |   |   |   |   |--- class: False
+|--- numPlatCars >  8.50
+|   |--- BeaconIntervalHuman <= 0.02
+|   |   |--- class: True
+|   |--- BeaconIntervalHuman >  0.02
+|   |   |--- class: False
