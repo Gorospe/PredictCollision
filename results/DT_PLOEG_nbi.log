@@ -1,0 +1,28 @@
+|--- waitTime <= 0.09
+|   |--- numPlatCars <= 9.00
+|   |   |--- class: False
+|   |--- numPlatCars >  9.00
+|   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |--- class: False
+|   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |--- class: True
+|   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |--- class: False
+|--- waitTime >  0.09
+|   |--- numPlatCars <= 7.50
+|   |   |--- class: False
+|   |--- numPlatCars >  7.50
+|   |   |--- numPlatCars <= 11.00
+|   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |--- waitTime <= 0.20
+|   |   |   |   |   |--- numHumanCars <= 350.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- numHumanCars >  350.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- waitTime >  0.20
+|   |   |   |   |   |--- class: True
+|   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |--- class: True
+|   |   |--- numPlatCars >  11.00
+|   |   |   |--- class: True

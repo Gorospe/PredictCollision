@@ -118,13 +118,13 @@ def test_dec_tree(X_train, y_train, X_test, y_test, X_train_std, X_test_std):
     column_names = ['Algorithm', 'Standarised', 'AccTrain', 'Acc', 'Prec', 'Recall', 'TN', 'FP', 'FN', 'TP', 'TimeMed', 'TimeMax', 'TimeMin', 'max_leaf_node']
     alg_rs = pd.DataFrame(columns=column_names)
 
-    for leafs in range(2,50):
+    for leafs in range(2,50): #change it to numbers for power of 2
         dt = DecisionTreeClassifier(class_weight="balanced", max_leaf_nodes=leafs).fit(X_train, y_train)
         alg_rs = alg_rs.append(algor(dt, X_train, y_train, X_test, y_test, 'DecisionTree', False, column_names, [leafs]))
         alg_rs = alg_rs.append(algor(dt, X_train_std, y_train, X_test_std, y_test, 'DecisionTree', True, column_names, [leafs]))
     
     for leafs in range(2,50):
-        rdf = RandomForestClassifier(class_weight="balanced").fit(X_train, y_train)
+        rdf = RandomForestClassifier(class_weight="balanced", max_leaf_nodes=leafs).fit(X_train, y_train)
         alg_rs = alg_rs.append(algor(rdf, X_train, y_train, X_test, y_test, 'RandomForest', False, column_names, [leafs]))
         alg_rs = alg_rs.append(algor(rdf, X_train_std, y_train, X_test_std, y_test, 'RandomForest', True, column_names, [leafs]))
     
