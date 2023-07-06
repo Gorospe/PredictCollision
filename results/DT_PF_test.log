@@ -1,0 +1,181 @@
+|--- BeaconIntervalHuman <= 0.01
+|   |--- waitTime <= 0.09
+|   |   |--- class: False
+|   |--- waitTime >  0.09
+|   |   |--- numPlatCars <= 9.00
+|   |   |   |--- waitTime <= 0.13
+|   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |--- waitTime >  0.13
+|   |   |   |   |--- numHumanCars <= 350.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |   |--- waitTime <= 0.20
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- waitTime >  0.20
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- numHumanCars >  350.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |--- numPlatCars >  9.00
+|   |   |   |--- numPlatCars <= 11.00
+|   |   |   |   |--- waitTime <= 0.13
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- waitTime >  0.13
+|   |   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |   |--- waitTime <= 0.20
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- waitTime >  0.20
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |--- numPlatCars >  11.00
+|   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |--- waitTime <= 0.13
+|   |   |   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- waitTime >  0.13
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |--- class: True
+|--- BeaconIntervalHuman >  0.01
+|   |--- numPlatCars <= 9.00
+|   |   |--- numHumanCars <= 450.00
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |--- waitTime <= 0.04
+|   |   |   |   |   |--- PacketSize <= 300.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- PacketSize >  300.00
+|   |   |   |   |   |   |--- DecelerationRate <= 7.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- DecelerationRate >  7.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- waitTime >  0.04
+|   |   |   |   |   |--- class: False
+|   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |--- numHumanCars <= 200.00
+|   |   |   |   |   |--- class: False
+|   |   |   |   |--- numHumanCars >  200.00
+|   |   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |   |--- waitTime <= 0.20
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- waitTime >  0.20
+|   |   |   |   |   |   |   |--- class: False
+|   |   |--- numHumanCars >  450.00
+|   |   |   |--- waitTime <= 0.09
+|   |   |   |   |--- class: False
+|   |   |   |--- waitTime >  0.09
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |--- waitTime <= 0.20
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- waitTime >  0.20
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |--- class: False
+|   |--- numPlatCars >  9.00
+|   |   |--- waitTime <= 0.13
+|   |   |   |--- numPlatCars <= 11.00
+|   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |--- waitTime <= 0.09
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- waitTime >  0.09
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |--- class: False
+|   |   |   |--- numPlatCars >  11.00
+|   |   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |--- class: False
+|   |   |--- waitTime >  0.13
+|   |   |   |--- numHumanCars <= 450.00
+|   |   |   |   |--- numPlatCars <= 11.00
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |   |--- numHumanCars <= 350.00
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- numHumanCars >  350.00
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |--- numPlatCars >  11.00
+|   |   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |--- numHumanCars >  450.00
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.25
+|   |   |   |   |   |--- spdLeader <= 90.00
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- spdLeader >  90.00
+|   |   |   |   |   |   |--- class: True
+|   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.25
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.35
+|   |   |   |   |   |   |--- class: False
+|   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.35
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) <= 0.45
+|   |   |   |   |   |   |   |--- class: True
+|   |   |   |   |   |   |--- Ctr_Param(Ploegh||Spacing) >  0.45
+|   |   |   |   |   |   |   |--- class: False

@@ -1,0 +1,22 @@
+|--- BeaconIntervalHuman <= 0.01
+|   |--- numPlatCars <= 11.00
+|   |   |--- waitTime <= 0.13
+|   |   |   |--- class: True
+|   |   |--- waitTime >  0.13
+|   |   |   |--- class: True
+|   |--- numPlatCars >  11.00
+|   |   |--- spdLeader <= 90.00
+|   |   |   |--- class: True
+|   |   |--- spdLeader >  90.00
+|   |   |   |--- class: True
+|--- BeaconIntervalHuman >  0.01
+|   |--- numHumanCars <= 200.00
+|   |   |--- DecelerationRate <= 7.00
+|   |   |   |--- class: False
+|   |   |--- DecelerationRate >  7.00
+|   |   |   |--- class: False
+|   |--- numHumanCars >  200.00
+|   |   |--- numPlatCars <= 11.00
+|   |   |   |--- class: False
+|   |   |--- numPlatCars >  11.00
+|   |   |   |--- class: False

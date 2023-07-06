@@ -1,0 +1,22 @@
+|--- numPlatCars <= 8.50
+|   |--- numHumanCars <= 200.00
+|   |   |--- numHumanCars <= 55.00
+|   |   |   |--- class: False
+|   |   |--- numHumanCars >  55.00
+|   |   |   |--- class: False
+|   |--- numHumanCars >  200.00
+|   |   |--- BeaconIntervalPlat <= 0.08
+|   |   |   |--- class: False
+|   |   |--- BeaconIntervalPlat >  0.08
+|   |   |   |--- class: True
+|--- numPlatCars >  8.50
+|   |--- BeaconIntervalHuman <= 0.02
+|   |   |--- waitTime <= 0.09
+|   |   |   |--- class: True
+|   |   |--- waitTime >  0.09
+|   |   |   |--- class: True
+|   |--- BeaconIntervalHuman >  0.02
+|   |   |--- numHumanCars <= 350.00
+|   |   |   |--- class: True
+|   |   |--- numHumanCars >  350.00
+|   |   |   |--- class: False
