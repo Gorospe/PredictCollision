@@ -9,3 +9,4 @@ Not sure if I should remove it, mixing both results, change it to numbers (1 and
 From ML perspective, I would say the best approach would be to have one algorithm per controller. 
   - Removing "Controller" variable from dataset makes the algorithm think all are the same. We would lose a very important information there.
   - Changing to 1-2 values. We could mantain somehow controller information, but it is not a good practice. Some algorithms can be used for categorical variables, but not all of them. The ones that can't will assume that they are numbers (so, 1>2)
+ 
